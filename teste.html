@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Superior</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('/public/img/Esmaltaê.jpg');
+            background-size: 80%;
+            /* Faz a imagem cobrir toda a tela */
+            background-position: center;
+            /* Centraliza a imagem */
+            background-attachment: fixed;
+            /* Faz com que a imagem de fundo fique fixa durante o scroll */
+            background-repeat: no-repeat;
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Fundo semitransparente para o cabeçalho */
+            border-bottom: 2px solid black;
+            border-top: 2px solid black;
+
+        }
+
+        /* Logo */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: brown;
+        }
+
+        /* Menu */
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: brown;
+            font-weight: 600;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        /* Estilo do conteúdo */
+        main {
+            padding: 50px;
+            color: #fff;
+            /* Cor do texto para contraste */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">ESMALTAÊ</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#quem-somos">Quem Somos</a>
+            <a href="#agendamento">Agendamento</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da página -->
+    <main>
+        <section id="home">
+            <h1>Bem-vindo à Home</h1>
+        </section>
+        <section id="quem-somos">
+            <h1>Sobre nós</h1>
+        </section>
+        <section id="agendamento">
+            <h1>Agende agora</h1>
+        </section>
+    </main>
+</body>
+
+</html>

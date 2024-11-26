@@ -1,0 +1,220 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+}
+
+/* Configuração global */
+html, body {
+    height: 100%; /* Ocupa toda a altura */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Coloca footer no final */
+}
+
+body.home-page {
+    font-family: Arial, sans-serif;
+    background-image: url('/img/Esmaltaê.jpg');
+    background-size: 80%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid #FAD1D1;
+    border-top: 2px solid #FAD1D1;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #A42D48;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: brown;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Main */
+main {
+    flex: 1; /* Ocupa o espaço restante da tela */
+    padding: 50px;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border-top: 2px solid black;
+}
+
+
+/*  */
+/* Estilo da seção "Quem Somos" */
+
+.quem-somos-content {
+    background-color: #f8f8f8; /* Fundo claro */
+    padding: 50px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
+
+.about-us {
+  padding: 50px;
+  text-align: center;
+  background-color: #f8f8f8;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+}
+
+.about-us h1 {
+  font-size: 36px;
+  color: #b76e79;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+/* Galeria */
+.gallery {
+  padding: 50px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 28px;
+  color: #b76e79;
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-item img {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.gallery-item p {
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+
+/* Estrutura do formulario */
+
+
+.form-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F7F7F7;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #444;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: rgb(238, 144, 175);
+    color: #4B4B4B;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FAD1D1;
+}

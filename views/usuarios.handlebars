@@ -1,0 +1,35 @@
+<h1>Consulta de Usuários</h1>
+
+<h2>Lista de Usuários</h2>
+{{#if users}}
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Tipo</th>
+        <th>Idade</th>
+        <th>Raça</th>
+        <th>Descrição</th>
+    </tr>
+
+    {{#each users}}
+    <tr>
+        <td>{{@key}}</td>
+        <td>{{this.nome}}</td>
+        <td>{{this.telefone}}</td>
+        <td>{{this.servico}}</td>
+    </tr>
+    {{/each}}
+</table>
+{{else}}
+<p>Nenhum usuário econtrado.</p>
+{{/if}}
+
+<h2>Remover Usuário</h2>
+<form action="/delete" method="POST">
+    <label for="deleteID">ID do Usuário: </label>
+    <input type="text" id="deleteId" name="id" required>
+    <button type="submit">Remover</button>
+
+
+</form>

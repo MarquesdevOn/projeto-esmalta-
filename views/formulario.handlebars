@@ -1,0 +1,45 @@
+
+<header>
+    <div class="logo">ESMALTAÊ</div>
+    <nav>
+        <a href="/home">Home</a>
+        <a href="/quemsomos">Quem Somos</a>
+        <a href="/formulario">Agendamento</a>
+    </nav>
+</header>
+
+
+
+<div class="form-page">
+    <div class="form-container">
+        <h1>Agendamento de Serviços</h1>
+        <form action="/submit" method="POST">
+            <!-- Nome -->
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <!-- Telefone -->
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+
+            <!-- Tipo de Serviço -->
+            <div class="form-group">
+                <label for="servico">Tipo de Serviço:</label>
+                <select id="servico" name="servico" required>
+                    <option value="" disabled selected>Escolha um serviço</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="pedicure">Pedicure</option>
+                    <option value="hidratacao">Hidratação dos Pés</option>
+                    <option value="nail-design">Nail Design</option>
+                </select>
+            </div>
+
+            <!-- Botão -->
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
+</div>
